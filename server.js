@@ -61,8 +61,8 @@ const authUser = async (req, res, next) => {
   }
 };
 // Hii
-app.get('/', async(req,resp)=>{
-  return resp.json({
+app.get('/', async(req,res)=>{
+  return res.json({
     message: "hii from Deployed"
   })
 }) 
