@@ -60,6 +60,12 @@ const authUser = async (req, res, next) => {
     console.log(error);
   }
 };
+// Hii
+app.get('/', async(req,resp)=>{
+  return resp.json({
+    message: "hii from Deployed"
+  })
+}) 
 //SIGN-UP
 app.post('/api/register', async (req, res) => {
   try {
